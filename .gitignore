@@ -1,0 +1,12 @@
+data/
+*.mp4
+*.avi
+*.mkv
+*.npy
+*.faiss
+*.pt
+*.safetensors
+.venv/
+__pycache__/
+.DS_Store
+.ipynb_checkpoints/
