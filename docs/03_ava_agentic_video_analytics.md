@@ -55,7 +55,7 @@ This is the **blueprint for system 3**:
 | Question answering (multiple choice / free text) | **Retrieval**: return the right clips, measured with recall@k |
 | No structured filters | **Hard filters on camera, zone and time** ("gate 3 after 6 pm") |
 | Accuracy is the main metric | **Accuracy and cost and latency**, at several archive sizes |
-| Web / benchmark videos | Real company CCTV |
+| Web / benchmark videos | Real fixed-camera footage from Whiteshield |
 
 Ideas to borrow directly:
 

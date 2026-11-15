@@ -1,6 +1,6 @@
 # Privacy, the EU AI Act and GDPR: what it means for this system
 
-> I'm not a lawyer. This is my reading to frame the design. The company's DPO or legal team should confirm it.
+> I'm not a lawyer. This is my reading to frame the design. Whiteshield's data protection or legal team should confirm it.
 
 ## Why this matters
 
@@ -23,7 +23,7 @@ Searching for "a person in a red jacket" across all cameras and all days is very
 
 - **Purpose limitation**: footage collected for security can be used for incident investigation. Is "thesis research" covered? → Needs a check and probably a **DPIA** (data protection impact assessment) plus a data access agreement.
 - **Data minimisation and retention**: the index (descriptions, embeddings) is also personal data. **It must not outlive the footage's retention period.** If video is kept 30 days, so is the index. That limits my "months of footage" scaling experiments on real data. I might need to simulate long archives (e.g. replay, or use public datasets for scale).
-- **Security**: footage stays on company infrastructure. **No sending frames to external APIs** (GPT-4o, Gemini) unless legally cleared. This decides which VLMs I can use in system 3 → open models on local GPUs.
+- **Security**: footage stays on Whiteshield infrastructure. **No sending frames to external APIs** (GPT-4o, Gemini) unless legally cleared. This decides which VLMs I can use in system 3 → open models on local GPUs.
 
 ## Design rules I'll follow (to put in the thesis)
 

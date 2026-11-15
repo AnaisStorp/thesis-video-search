@@ -7,7 +7,7 @@ These are shorter notes than the four main papers, grouped by which part of the 
 ## A. For system 1: attribute index over tracked objects
 
 ### Detection and tracking (the base for systems 1 and 2)
-- **YOLO family (Ultralytics YOLOv8 / YOLO11)**: a fast object detector. It is probably close to what the company already runs.
+- **YOLO family (Ultralytics YOLOv8 / YOLO11)**: a fast object detector. It is probably close to what is already deployed in practice.
 - **ByteTrack** (Zhang et al., ECCV 2022) and **BoT-SORT** (Aharon et al., 2022): simple multi-object trackers that link detections into tracks within one camera. A *track* is the unit I index ("one person walking through camera 4 from 18:02 to 18:03").
 - **Grounding DINO** (Liu et al., ECCV 2024) and **OWL-ViT / OWLv2** (Minderer et al., 2022/2023): open-vocabulary detectors. You give a text ("white van") and they find boxes. They sit between systems 1 and 2 and could serve as a baseline or a re-ranker.
 
@@ -73,7 +73,7 @@ These give me a ready-made **taxonomy of failure types** for the query set: colo
 
 ---
 
-## D. Datasets with fixed cameras (to develop before company data arrives, and for public reproducibility)
+## D. Datasets with fixed cameras (to develop before Whiteshield data arrives, and for public reproducibility)
 
 | Dataset | What it is | Why useful |
 |---------|-----------|------------|

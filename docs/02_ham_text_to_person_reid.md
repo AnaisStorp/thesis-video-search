@@ -2,7 +2,7 @@
 
 **Jiang, J. et al. (2025). Modeling Thousands of Human Annotators for Generalizable Text-to-Image Person Re-identification. CVPR 2025.**
 
-> ⚠️ I couldn't automatically fetch this paper while writing these notes. The ideas below are what I know of it. **Check every name and number against the PDF** before citing.
+> **Warning:** I couldn't automatically fetch this paper while writing these notes. The ideas below are what I know of it. **Check every name and number against the PDF** before citing.
 
 ## The task first: text-to-image person search (also called text-based person re-identification)
 
@@ -38,7 +38,7 @@ A model pre-trained on this synthetic data generalises much better to CUHK-PEDES
 
 - **It's the closest research task to "a person in a red jacket".** The difference is that it works on clean, already-cropped photos, while I work on full camera views with time and place. A specialist text–person model like this could be a **fourth option** or a stronger version of system 2 just for person queries.
 - **The real lesson is about queries.** Operators will word things in many different ways ("red coat", "guy in a red top", "someone wearing red"). My **test set must include many phrasing styles**, otherwise I'm only testing my own way of writing. I could use the same trick: have an LLM rewrite each test query in several styles and check if recall holds.
-- **Synthetic captions as cheap labels.** The same pipeline (MLLM writes descriptions of tracked people) is basically how I'd build attribute labels or extra training data from company footage.
+- **Synthetic captions as cheap labels.** The same pipeline (MLLM writes descriptions of tracked people) is basically how I'd build attribute labels or extra training data from Whiteshield footage.
 
 ## Limits for my setting
 

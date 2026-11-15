@@ -34,5 +34,5 @@ PE Core was state of the art (at release) on zero-shot image classification and 
 
 - The PE models are trained on web data, so CCTV is out of domain. Measure that, don't assume it.
 - It's still a contrastive model, so I expect the same weaknesses as CLIP on counting and positions. I should check this rather than assume it improved.
-- Check the licence before using it in a company setting.
+- Check the licence before using it in an industrial setting.
 - Embedding dimension (it varies by model size; L is around 1024 **(to check)**) drives memory in Faiss. See note 04.
